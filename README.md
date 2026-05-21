@@ -28,20 +28,7 @@ The command sudo setoolkit in the prompt gives menu with set prompt:
 
 Explanation:
 
-sudo → Runs the command with administrator (root) privileges.
-setoolkit → Launches the Social Engineering Toolkit (SET).
-
-Purpose:
-SET is a penetration testing framework used for simulating social engineering attacks in authorized security labs.
-
-What happens:
-
-Opens the SET main menu
-Displays attack modules like:
-Social Engineering Attacks
-Penetration Testing Tools
-Third Party Modules
-Update SET
+When you run sudo setoolkit, you are launching the Social Engineering Toolkit (SET) with administrator privileges. SET is an open-source penetration testing framework designed exclusively for simulating social engineering attacks in authorized security environments. Upon execution, the command opens SET's main menu, which provides access to various advanced attack modules, including Social Engineering Attacks, Penetration Testing Tools, Third-Party Modules, and options to update the toolkit.
 
 The command sudo setoolkit in the prompt gives menu with set prompt. Select menu1 for Social Engineering Attacks:
 ## OUTPUT
@@ -53,15 +40,7 @@ Selection:
 1
 
 Explanation:
-Chooses the Social Engineering Attack menu.
-
-Purpose:
-Contains modules to simulate attacks such as:
-
-Credential harvesting
-Spear phishing
-Website cloning
-Payload generation (authorized testing only)
+Selecting this option opens the Social Engineering Attacks menu, which consolidates modules specifically designed to simulate real-world psychological manipulation tactics. Within this menu, security professionals can deploy authorized simulations such as credential harvesting to capture login data, spear phishing to test user awareness against targeted emails, website cloning to mimic legitimate login portals, and payload generation to evaluate system defenses against malicious files.
 
 It displays the following menu and select 2 for Website Attack Vectors:
 ## OUTPUT
@@ -75,18 +54,9 @@ Selection:
 2
 
 Explanation:
-Opens web-based attack simulation options.
 
-Purpose:
-Used for testing how users respond to cloned or simulated websites in controlled environments.
+Choosing this path opens the web-based attack simulation options, which are designed to test how users interact with cloned or simulated websites within a controlled environment. This menu provides security analysts with a variety of deployment methods, including Java Applet Attacks, Metasploit Browser Exploits, and a dedicated Credential Harvester mechanism. Additionally, users can choose to leverage pre-built Web Templates or utilize the Custom Import feature to bring their own assets into the simulation.
 
-Options usually include:
-
-Java Applet Attack
-Metasploit Browser Exploit
-Credential Harvester
-Web Templates
-Custom Import
 The Credential Harvester Attack Method displays the following menu. In this menu1 for Web Templates is selected:
 ## OUTPUT
 
@@ -100,16 +70,7 @@ Selection:
 (or the corresponding menu number shown)
 
 Explanation:
-Starts the credential harvester module.
-
-Purpose:
-Creates a simulated login page to demonstrate how credential phishing works during awareness training or lab exercises.
-
-Function:
-
-Hosts a fake login page
-Collects submitted form data
-Logs test submissions locally
+Executing this selection starts the credential harvester module, which creates a simulated login page to demonstrate exactly how credential phishing works during awareness training or authorized lab exercises. Functionally, the module hosts a fake login page that mimics a legitimate portal, collects any submitted form data when a user attempts to log in, and securely logs these test submissions locally for analysis and training metrics.
 
 It shows the following screen in which the ip address of the attacker need to be given which is the default value:
 ## OUTPUT
@@ -125,7 +86,6 @@ It shows the following screen in which the option Google can be selected:
 
 
 SET asks:
-
 Enter the IP address for the POST back in Harvester
 
 Explanation:
@@ -136,6 +96,7 @@ Example:
 10.50.252.7
 Purpose:
 Allows test machines on the same network to connect to the hosted simulation page.
+
 SET starts my Kali Linux Webserver on port 80, with the fake Google account login page. The setup is done:
 ## OUTPUT
 
@@ -149,7 +110,6 @@ In windows IE, on giving the url http://192.168.1.2 (use appropriate IP address)
 
 
 SET asks:
-
 Enter the IP address for the POST back in Harvester
 
 Explanation:
